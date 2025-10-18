@@ -5,8 +5,34 @@ Script to create a unified database for both product images and videos.
 
 import csv
 import json
+import re
 from pathlib import Path
 from urllib.parse import quote
+
+
+def clean_image_url(url):
+    """
+    Clean malformed Amazon image URLs.
+    
+    Removes the /W/IMAGERENDERING_XXXXXX-TX/images pattern from URLs.
+    Example:
+        https://m.media-amazon.com/images/W/IMAGERENDERING_521856-T2/images/I/71cv73eEBWL._AC_UL320_.jpg
+        -> https://m.media-amazon.com/images/I/71cv73eEBWL._AC_UL320_.jpg
+    
+    Args:
+        url: Original image URL
+        
+    Returns:
+        Cleaned URL
+    """
+    if not url:
+        return url
+    
+    # Pattern to match: /W/IMAGERENDERING_XXXXXX-TX/images
+    pattern = r'/W/IMAGERENDERING_[^/]+-[^/]+/images'
+    cleaned_url = re.sub(pattern, '', url)
+    
+    return cleaned_url
 
 
 def process_product_images(csv_dir):
@@ -36,11 +62,14 @@ def process_product_images(csv_dir):
                     image_url = row.get('image', '').strip()
                     
                     if name and image_url:  # Only include if we have name and image
+                        # Clean the image URL to fix malformed Amazon URLs
+                        cleaned_url = clean_image_url(image_url)
+                        
                         entry = {
                             'content_type': 'image',
                             'title': name,
                             'description': name,
-                            'link': image_url,
+                            'link': cleaned_url,
                             'meta': {
                                 'category': main_category,
                                 'sub_category': sub_category

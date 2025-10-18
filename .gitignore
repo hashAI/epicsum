@@ -1,7 +1,18 @@
-# Database files (large)
+# Large files (assembled from chunks in embeddings_chunks/)
+embeddings.npy
 unified_media_database.json
+embeddings_index.json
+
+# Legacy/backup database files
 product_database.json
-*.zip
+
+# Backup and temporary files
+media_service_old.py
+service.log
+nohup.out
+benchmark_results.py
+performance_test.py
+SETUP.md
 
 # Consolidated data files (too large for git)
 *Amazon-Products.csv
