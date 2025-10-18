@@ -6,8 +6,8 @@ A FastAPI service that returns relevant media (images/videos) based on text desc
 
 ## Database Stats
 
-- **1,103,270** total media items
-- **1,103,170** product images (Amazon)
+- **551,685** total media items
+- **551,585** product images (Amazon, 139 CSV files)
 - **100** videos (Pixabay)
 
 ---
@@ -27,7 +27,7 @@ python3 create_unified_database.py
 ```
 
 This creates `unified_media_database.json` (~442 MB) from:
-- 140 CSV files in `product-images-dataset/`
+- 139 CSV files in `product-images-dataset/`
 - Video metadata in `video-dataset/metadata.json`
 
 ---
@@ -256,6 +256,8 @@ VIDEO_BASE_URL = "http://your-server.com/path/"
 | `unified_media_database.json` | Main database (gitignored) |
 | `start_service.sh` | Service launcher script |
 | `requirements.txt` | Python dependencies |
+| `product-images-dataset/` | 139 CSV files with product data |
+| `video-dataset/` | Video metadata and files |
 
 ---
 
