@@ -1,0 +1,702 @@
+[
+    {
+        "url": "https://pixabay.com/videos/dubrovnik-sunset-sea-city-12866/",
+        "text": "dubrovnik, sunset, sea, city",
+        "handwritten_description": "from sunset to night, a small town, light, house, river",
+        "editing_prompt": "sunset, a small town, light, house, river",
+        "file_name": "videos/dubrovnik_-_12866 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/seoul-city-streets-road-night-view-21985/",
+        "text": "seoul, city, streets, road, night, view",
+        "handwritten_description": "street, night, lots of cars, traffic, dark",
+        "editing_prompt": "cyberpunk, red neon light, street, day, lots of cars, traffic, bright",
+        "file_name": "videos/seoul_-_21985 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/easter-bell-daffodil-easter-spring-34826/",
+        "text": "easter, bell, daffodil, easter, spring",
+        "handwritten_description": "yellow flower, grey background",
+        "editing_prompt": "white flower, grey background, painting",
+        "file_name": "videos/daffodil_-_34826 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/airport-people-crowd-busy-36510/",
+        "text": "airport, people, crowd, busy",
+        "handwritten_description": "a group of people are walking in the subway passage",
+        "editing_prompt": "cyberpunk style, blue neon light, a group of people are walking in the subway passage",
+        "file_name": "videos/airport_-_36510 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/surf-sea-ocean-wave-beach-water-36609/",
+        "text": "surf, sea, ocean, wave, beach, water",
+        "handwritten_description": "sea, many people are surfing, surfboard",
+        "editing_prompt": "blue sea, many people are surfing, surfboard",
+        "file_name": "videos/surf_-_36609 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ijen-crater-indonesia-mine-volcano-37079/",
+        "text": "ijen, crater, indonesia, mine, volcano",
+        "handwritten_description": "mountain, cloud",
+        "editing_prompt": "volcano, red, danger, magma, cloud",
+        "file_name": "videos/ijen_-_37079 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/waterfall-water-river-nature-37088/",
+        "text": "waterfall, water, river, nature",
+        "handwritten_description": "jungle, falls, waterfall",
+        "editing_prompt": "oil painting, jungle, falls, waterfall",
+        "file_name": "videos/waterfall_-_37088 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/bee-oilseed-rape-blossom-bloom-37144/",
+        "text": "bee, oilseed, rape, blossom, bloom",
+        "handwritten_description": "bee, yellow flowers, beautiful",
+        "editing_prompt": "bee, red flowers, beautiful",
+        "file_name": "videos/bee_-_37144 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/underwater-sea-ocean-water-37712/",
+        "text": "underwater, sea, ocean, water",
+        "handwritten_description": "bubbles in the deep sea",
+        "editing_prompt": "shining, glowing bubbles in the deep sea",
+        "file_name": "videos/underwater_-_37712 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/woman-phone-smartphone-technology-38084/",
+        "text": "woman, phone, smartphone, technology",
+        "handwritten_description": "a woman with a phone, hands, red fingernail",
+        "editing_prompt": "a woman with a phone, hands, pink fingernail",
+        "file_name": "videos/woman_-_38084 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/bee-honey-insect-beehive-nature-39116/",
+        "text": "bee, honey, insect, beehive, nature",
+        "handwritten_description": "bee",
+        "editing_prompt": "spring, yellow bee",
+        "file_name": "videos/bee_-_39116 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/cycling-man-bike-helmet-road-39183/",
+        "text": "cycling, man, bike, helmet, road",
+        "handwritten_description": "a man, bike helmet, riding, night",
+        "editing_prompt": "cloudless day, a man, bike helmet, riding, bright",
+        "file_name": "videos/cycling_-_39183 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/nature-rain-plant-water-garden-42420/",
+        "text": "nature, rain, plant, water, garden",
+        "handwritten_description": "green plants in a bottle",
+        "editing_prompt": "withered yellow plants in a bottle",
+        "file_name": "videos/nature_-_42420 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/china-the-poet-tea-culture-read-43238/",
+        "text": "china, the, poet, tea, culture, read",
+        "handwritten_description": "red clothes, Chinese, teapot, hand, book",
+        "editing_prompt": "yellow clothes, Chinese, teapot, hand, book",
+        "file_name": "videos/china_-_43238 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/girl-writing-student-female-book-43459/",
+        "text": "girl, writing, student, female, book",
+        "handwritten_description": "a beautiful girl is reading, sitting on a sofa, purple clothes",
+        "editing_prompt": "a beautiful girl is writing, sitting on a sofa, red clothes",
+        "file_name": "videos/girl_-_43459 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/hair-wind-girl-woman-people-43633/",
+        "text": "hair, wind, girl, woman, people",
+        "handwritten_description": "blond long hair, wind",
+        "editing_prompt": "black long hair, wind",
+        "file_name": "videos/hair_-_43633 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/river-urban-city-architecture-44509/",
+        "text": "river, urban, city, architecture",
+        "handwritten_description": "day, a bridge, water, river, tree",
+        "editing_prompt": "sunset, a bridge, water, river, tree",
+        "file_name": "videos/river_-_44509 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/fishing-fish-fisherman-water-44534/",
+        "text": "fishing, fish, fisherman, water",
+        "handwritten_description": "fishing rod, white, grass",
+        "editing_prompt": "winter, snow, fishing rod, white, grass",
+        "file_name": "videos/fishing_-_44534 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/path-people-helicopter-mountains-44702/",
+        "text": "path, people, helicopter, mountains",
+        "handwritten_description": "summer, mountain, white, tree",
+        "editing_prompt": "winter, snow mountain, white, tree",
+        "file_name": "videos/trail_-_44702 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/clouds-mountains-panorama-outdoor-45150/",
+        "text": "clouds, mountains, panorama, outdoor",
+        "handwritten_description": "green grass, spring, cloud, mountain",
+        "editing_prompt": "green grass, spring, cloud",
+        "file_name": "videos/creux_de_van_-_45150 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/coffee-beans-caffeine-coffee-shop-45358/",
+        "text": "coffee, beans, caffeine, coffee, shop",
+        "handwritten_description": "cocoa, cacao",
+        "editing_prompt": "cocoa, cacao, fill-in light",
+        "file_name": "videos/coffee_-_45358 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/glacier-express-bernina-express-rhb-45569/",
+        "text": "glacier, express, bernina, express, rhb",
+        "handwritten_description": "a train, rail, coast, grassland, sea",
+        "editing_prompt": "a green train, rail, coast, grassland",
+        "file_name": "videos/glacier_express_-_45569 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/bird-parrot-nature-animal-colorful-46026/",
+        "text": "bird, parrot, nature, animal, colorful",
+        "handwritten_description": "a red bird, parrot",
+        "editing_prompt": "a green bird, parrot",
+        "file_name": "videos/bird_-_46026 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/alone-person-man-people-guitar-46637/",
+        "text": "alone, person, man, people, guitar",
+        "handwritten_description": "a man is playing guita, back, colorful light",
+        "editing_prompt": "a man is playing guita, back, white light, old photo",
+        "file_name": "videos/alone_-_46637 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/coffee-hot-drink-coffee-pot-46989/",
+        "text": "coffee, hot, drink, coffee, pot",
+        "handwritten_description": "coffee, glass",
+        "editing_prompt": "orange, juicer, glass, orange juice",
+        "file_name": "videos/coffee_-_46989 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/windmill-landscape-energy-sky-47905/",
+        "text": "windmill, landscape, energy, sky",
+        "handwritten_description": "wind power generation",
+        "editing_prompt": "wind power generation, green grassland",
+        "file_name": "videos/windmill_-_47905 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/golden-particles-overlay-decoration-48569/",
+        "text": "golden, particles, overlay, decoration",
+        "handwritten_description": "yellow light particles",
+        "editing_prompt": "white light particles",
+        "file_name": "videos/golden_-_48569 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/forest-woods-mystical-morning-49981/",
+        "text": "forest, woods, mystical, morning",
+        "handwritten_description": "forest, sunshine, fog",
+        "editing_prompt": "magic forest, purple fog",
+        "file_name": "videos/forest_-_49981 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sea-beach-sunset-tree-53127/",
+        "text": "sea, beach, sunset, tree",
+        "handwritten_description": "hot desert, dead wood, water, sky",
+        "editing_prompt": "hot desert, dead wood",
+        "file_name": "videos/sea_-_53127 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/fog-mountains-road-foggy-dramatic-53358/",
+        "text": "fog, mountains, road, foggy, dramatic",
+        "handwritten_description": "foggy, fork on the road, mountain",
+        "editing_prompt": "foggy, fork on the road, mountain, yellow stone",
+        "file_name": "videos/fog_-_53358 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/traffic-city-traffic-drone-53902/",
+        "text": "traffic, city, traffic, drone",
+        "handwritten_description": "uav aerial photography, day, bright, town",
+        "editing_prompt": "uav aerial photography, night, dark, town",
+        "file_name": "videos/trafic_-_53902 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sheep-morning-sunray-nature-57647/",
+        "text": "sheep, morning, sunray, nature",
+        "handwritten_description": "sunshie, forest, sheep",
+        "editing_prompt": "gloomy, forest, sheep",
+        "file_name": "videos/sheep_-_57647 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/road-highway-drive-car-alps-57993/",
+        "text": "road, highway, drive, car, alps",
+        "handwritten_description": "road, stone",
+        "editing_prompt": "the world war, smoke of gunpowder, flames, ruins, shambles, wasteland",
+        "file_name": "videos/road_-_57993 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/woman-flowers-plants-field-garden-58142/",
+        "text": "woman, flowers, plants, field, garden",
+        "handwritten_description": "pink flowers, a hand",
+        "editing_prompt": "yellow flowers, a hand",
+        "file_name": "videos/woman_-_58142 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/mountains-fog-clouds-sunset-59291/",
+        "text": "mountains, fog, clouds, sunset",
+        "handwritten_description": "sun, cloud, mountain",
+        "editing_prompt": "sun, cloud, chinese ink painting",
+        "file_name": "videos/mountains_-_59291 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sunflowers-bees-field-bloom-summer-59483/",
+        "text": "sunflowers, bees, field, bloom, summer",
+        "handwritten_description": "yellow flowers",
+        "editing_prompt": "red flowers",
+        "file_name": "videos/sunflowers_-_59483 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/mountains-trees-woods-forest-61818/",
+        "text": "mountains, trees, woods, forest",
+        "handwritten_description": "winter, snow, forest, trees, white",
+        "editing_prompt": "CG, 2.5D, winter, snow, forest, trees, white",
+        "file_name": "videos/mountains_-_61818 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ocean-sunset-sea-beach-coast-62249/",
+        "text": "ocean, sunset, sea, beach, coast",
+        "handwritten_description": "clouds, sea wave",
+        "editing_prompt": "dark clouds, sea wave, thunder",
+        "file_name": "videos/ocean_-_62249 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/woman-mask-healthcare-young-63241/",
+        "text": "woman, mask, healthcare, young",
+        "handwritten_description": "a woman, mask, phone, gray clothes",
+        "editing_prompt": "a woman, mask, phone, white clothes",
+        "file_name": "videos/woman_-_63241 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/clouds-cumulus-sky-fluffy-outdoors-64759/",
+        "text": "clouds, cumulus, sky, fluffy, outdoors",
+        "handwritten_description": "sky, cloud",
+        "editing_prompt": "blue sky, cloud",
+        "file_name": "videos/clouds_-_64767 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/clouds-cumulus-sky-fluffy-outdoors-64767/",
+        "text": "clouds, cumulus, sky, fluffy, outdoors",
+        "handwritten_description": "cloud, sky",
+        "editing_prompt": "smoke smudge, dark, industrial waste gas, pollute",
+        "file_name": "videos/clouds_-_64767 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/record-record-player-vinyl-65390/",
+        "text": "record, record, player, vinyl",
+        "handwritten_description": "disc, rotating, phonograph record",
+        "editing_prompt": "black, disc, rotating, phonograph record",
+        "file_name": "videos/record_-_65390 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/cat-feline-animal-mammal-kitten-65438/",
+        "text": "cat, feline, animal, mammal, kitten",
+        "handwritten_description": "a black and white cat",
+        "editing_prompt": "an orange and white cat",
+        "file_name": "videos/cat_-_65438 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ocean-waves-water-shore-florida-65560/",
+        "text": "ocean, waves, water, shore, florida",
+        "handwritten_description": "beach, sea",
+        "editing_prompt": "yellow beach, polluted turbid sea water",
+        "file_name": "videos/ocean_-_65560 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/highland-cows-cows-cattle-scotland-65903/",
+        "text": "highland, cows, cows, cattle, scotland",
+        "handwritten_description": "a yellow cow",
+        "editing_prompt": "a white cow",
+        "file_name": "videos/highland_cows_-_65903 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/grass-dew-field-fog-morning-66810/",
+        "text": "grass, dew, field, fog, morning",
+        "handwritten_description": "grass, early morning, dewdrop",
+        "editing_prompt": "Japanese anime style, grass, early morning, dewdrop",
+        "file_name": "videos/grass_-_66810 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/flowers-cherry-flower-petals-bloom-66823/",
+        "text": "flowers, cherry, flower, petals, bloom",
+        "handwritten_description": "sun, tree, pink flowers",
+        "editing_prompt": "sun, tree, red flowers",
+        "file_name": "videos/flowers_-_66823 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/lake-houses-hill-mountain-boat-67201/",
+        "text": "lake, houses, hill, mountain, boat",
+        "handwritten_description": "a town, buildings, tree, sea",
+        "editing_prompt": "winter, snow, town, buildings",
+        "file_name": "videos/lake_-_67201 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ink-water-underwater-foam-smoke-67358/",
+        "text": "ink, water, underwater, foam, smoke",
+        "handwritten_description": "red and blue smoke",
+        "editing_prompt": "purple smoke",
+        "file_name": "videos/ink_-_67358 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/waves-ocean-sea-beach-byron-bay-70796/",
+        "text": "waves, ocean, sea, beach, byron, bay",
+        "handwritten_description": "beach, sea, green forest",
+        "editing_prompt": "summer, beach, sea, green forest",
+        "file_name": "videos/waves_-_70796 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/waves-sea-ocean-storm-water-tide-71122/",
+        "text": "waves, sea, ocean, storm, water, tide",
+        "handwritten_description": "water, sea surface, night",
+        "editing_prompt": "clean water, sea surface",
+        "file_name": "videos/waves_-_71122 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/blackthorn-bud-blossom-bloom-71457/",
+        "text": "blackthorn, bud, blossom, bloom",
+        "handwritten_description": "white flower bud",
+        "editing_prompt": "yellow flower bud",
+        "file_name": "videos/blackthorn_-_71457 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/bike-beach-biker-mountain-bike-72566/",
+        "text": "bike, beach, biker, mountain, bike",
+        "handwritten_description": "a man is riding a bike on the beach, sea",
+        "editing_prompt": "oil painting, a man is riding a bike on the beach, blue sea",
+        "file_name": "videos/bike_-_72566 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/flower-dandelion-wild-flowers-72763/",
+        "text": "flower, dandelion, wild, flowers",
+        "handwritten_description": "yellow flowers",
+        "editing_prompt": "white flowers",
+        "file_name": "videos/flowers_-_72763 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sand-hand-beach-dessert-sea-73847/",
+        "text": "sand, hand, beach, dessert, sea",
+        "handwritten_description": "white sand, hand",
+        "editing_prompt": "golden yellow sand, hand",
+        "file_name": "videos/sand_-_73847 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ocean-birds-waves-beach-sunset-74888/",
+        "text": "ocean, birds, waves, beach, sunset",
+        "handwritten_description": "water, lake",
+        "editing_prompt": "blue water, lake",
+        "file_name": "videos/ocean_-_74888 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/water-lilies-lotus-pond-75008/",
+        "text": "water, lilies, lotus, pond",
+        "handwritten_description": "lotus",
+        "editing_prompt": "lotus leaf, lotus, oil painting",
+        "file_name": "videos/water_lilies_-_75008 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/skyscrapers-sunset-skyline-clouds-80724/",
+        "text": "skyscrapers, sunset, skyline, clouds",
+        "handwritten_description": "a city",
+        "editing_prompt": "future city, technology",
+        "file_name": "videos/skyscrapers_-_80724 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/mountains-parachute-paragliding-81945/",
+        "text": "mountains, parachute, paragliding",
+        "handwritten_description": "paraglider, extreme sports, cloud",
+        "editing_prompt": "cloudless day, sunshine, paraglider, extreme sports, cloud",
+        "file_name": "videos/mountains_-_81945 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sunrise-sunbeams-trees-woods-83880/",
+        "text": "sunrise, sunbeams, trees, woods",
+        "handwritten_description": "forest, tree, sunshine",
+        "editing_prompt": "winter, snow, forest, tree, sunshine",
+        "file_name": "videos/sunrise_-_83880 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/people-sunset-stroll-moscow-glare-84973/",
+        "text": "people, sunset, stroll, moscow, glare",
+        "handwritten_description": "some people walking on the street",
+        "editing_prompt": "some people walking on the street, old movie",
+        "file_name": "videos/people_-_84973 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/aurora-borealis-northern-lights-90877/",
+        "text": "aurora, borealis, northern, lights",
+        "handwritten_description": "stars, night, sky, aurora",
+        "editing_prompt": "stars, night, sky, fog",
+        "file_name": "videos/aurora_borealis_-_90877 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/mountains-alps-fog-snow-clouds-91545/",
+        "text": "mountains, alps, fog, snow, clouds",
+        "handwritten_description": "snow, mountain, cloud",
+        "editing_prompt": "spring, mountain, cloud",
+        "file_name": "videos/mountains_-_91545 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/skyscrapers-buildings-city-urban-91744/",
+        "text": "skyscrapers, buildings, city, urban",
+        "handwritten_description": "city",
+        "editing_prompt": "cyberpunk, city, red neon light",
+        "file_name": "videos/skyscrapers_-_91744 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/skate-sport-water-action-exercise-110734/",
+        "text": "skate, sport, water, action, exercise",
+        "handwritten_description": "a man is surfing, sea wave",
+        "editing_prompt": "surfing, sea wave, clear photography",
+        "file_name": "videos/skate_-_110734 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sakura-flowers-spring-nature-japan-110790/",
+        "text": "sakura, flowers, spring, nature, japan",
+        "handwritten_description": "pink flowers on a tree",
+        "editing_prompt": "white flowers",
+        "file_name": "videos/sakura_-_110790 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/jellyfish-underwater-ocean-water-110877/",
+        "text": "jellyfish, underwater, ocean, water",
+        "handwritten_description": "blue jellyfish, medusa, acaleph, in the deep sea",
+        "editing_prompt": "purple jellyfish, medusa, acaleph, in the deep sea",
+        "file_name": "videos/jellyfish_-_110877 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/fish-underwater-aquarium-swim-110879/",
+        "text": "fish, underwater, aquarium, swim",
+        "handwritten_description": "blue fish, bright, beautiful",
+        "editing_prompt": "yellow fish, bright, beautiful",
+        "file_name": "videos/fish_-_110879 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/forest-nature-fog-mist-morning-111101/",
+        "text": "forest, nature, fog, mist, morning",
+        "handwritten_description": "forest, day",
+        "editing_prompt": "dark forest, night",
+        "file_name": "videos/forest_-_111101 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sunset-nature-sky-dubai-111204/",
+        "text": "sunset, nature, sky, dubai",
+        "handwritten_description": "a city, sunset",
+        "editing_prompt": "a city in desert, sunday,",
+        "file_name": "videos/sunset_-_111204 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/beach-ocean-waves-water-sand-111263/",
+        "text": "beach, ocean, waves, water, sand",
+        "handwritten_description": "sea, uav aerial photography",
+        "editing_prompt": "blue sea, uav aerial photography",
+        "file_name": "videos/beach_-_111263 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/nature-mountains-grass-flowers-111508/",
+        "text": "nature, mountains, grass, flowers",
+        "handwritten_description": "grass, flower",
+        "editing_prompt": "spring, grass, flower, sunday",
+        "file_name": "videos/nature_-_111508 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/daffodils-easter-bells-spring-112389/",
+        "text": "daffodils, easter, bells, spring",
+        "handwritten_description": "white and yellow flower bud",
+        "editing_prompt": "white flower bud, white flower",
+        "file_name": "videos/daffodils_-_112389 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/wood-anemones-wildflower-flower-112429/",
+        "text": "wood, anemones, wildflower, flower",
+        "handwritten_description": "white flower",
+        "editing_prompt": "yellow flower",
+        "file_name": "videos/wood_anemones_-_112429 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/live-wallpaper-sea-water-waves-112722/",
+        "text": "live, wallpaper, sea, water, waves",
+        "handwritten_description": "green water",
+        "editing_prompt": "blue water",
+        "file_name": "videos/woman_of_the_sea_-_112722 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/windmill-turbine-energy-112957/",
+        "text": "windmill, turbine, energy",
+        "handwritten_description": "wind power generation, cloud",
+        "editing_prompt": "wind power generation, thunder, lightning",
+        "file_name": "videos/windmill_-_112957 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/blooms-tree-blossoms-spring-branch-113004/",
+        "text": "blooms, tree, blossoms, spring, branch",
+        "handwritten_description": "pink flowers",
+        "editing_prompt": "white flowers",
+        "file_name": "videos/blossoms_-_113004 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/frog-reeds-green-113403/",
+        "text": "frog, reeds, green",
+        "handwritten_description": "a frog",
+        "editing_prompt": "grey background, a frog",
+        "file_name": "videos/frog_-_113403 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ocean-beach-sunset-sea-atmosphere-135658/",
+        "text": "ocean, beach, sunset, sea, atmosphere",
+        "handwritten_description": "water, DOF, sunset",
+        "editing_prompt": "water, DOF, light",
+        "file_name": "videos/135658 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sea-ocean-beach-waves-sun-dusk-138588/",
+        "text": "sea, ocean, beach, waves, sun, dusk",
+        "handwritten_description": "blue water",
+        "editing_prompt": "green water",
+        "file_name": "videos/138588 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sea-ocean-seagulls-birds-sunset-140111/",
+        "text": "sea, ocean, seagulls, birds, sunset",
+        "handwritten_description": "sunset, sea mew, flying, sea",
+        "editing_prompt": "white sea mew, flying, sea",
+        "file_name": "videos/140111 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/christmas-christmas-decorations-141964/",
+        "text": "christmas, christmas, decorations",
+        "handwritten_description": "a white ball on the tree",
+        "editing_prompt": "a red ball on the tree",
+        "file_name": "videos/141964 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/pine-forest-snow-winter-snowfall-142579/",
+        "text": "pine, forest, snow, winter, snowfall",
+        "handwritten_description": "winter, snow, forest",
+        "editing_prompt": "summer, rain, forest",
+        "file_name": "videos/142579 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/clouds-sunlight-view-drone-nature-146169/",
+        "text": "clouds, sunlight, view, drone, nature",
+        "handwritten_description": "cloud",
+        "editing_prompt": "wind, cloud",
+        "file_name": "videos/146169 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/reeds-grass-wind-golden-sunshine-152740/",
+        "text": "reeds, grass, wind, golden, sunshine",
+        "handwritten_description": "setaria viridis",
+        "editing_prompt": "autumn, yellow, setaria viridis",
+        "file_name": "videos/152740 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/beach-sea-sand-island-elafonisos-153167/",
+        "text": "beach, sea, sand, island, elafonisos",
+        "handwritten_description": "a white sailboat, a lake, blue water",
+        "editing_prompt": "a white sailboat, a lake",
+        "file_name": "videos/153167-804706404 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/sunset-sea-sun-evening-atmosphere-153976/",
+        "text": "sunset, sea, sun, evening, atmosphere",
+        "handwritten_description": "sunset, sun, cloud",
+        "editing_prompt": "sunset",
+        "file_name": "videos/153976-806571973 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/beach-waves-natural-scenery-morning-158349/",
+        "text": "beach, waves, natural, scenery, morning",
+        "handwritten_description": "sea, beach, green water",
+        "editing_prompt": "polluted sea, beach",
+        "file_name": "videos/158349 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/clouds-cloudscape-wind-nature-158384/",
+        "text": "clouds, cloudscape, wind, nature",
+        "handwritten_description": "blue sky, white cloud",
+        "editing_prompt": "cloud, thunder, lightning, dark",
+        "file_name": "videos/158384 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/lion-animal-wildlife-safari-lions-158980/",
+        "text": "lion, animal, wildlife, safari, lions",
+        "handwritten_description": "lion, grass",
+        "editing_prompt": "tigers, desert",
+        "file_name": "videos/158980 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/flow-rocks-water-fluent-stones-159627/",
+        "text": "flow, rocks, water, fluent, stones",
+        "handwritten_description": "summer, water, river",
+        "editing_prompt": "winter, ice, snow, water, river",
+        "file_name": "videos/159627 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/ocean-beach-waves-breaking-waves-160767/",
+        "text": "ocean, beach, waves, breaking, waves",
+        "handwritten_description": "green water",
+        "editing_prompt": "water, froth, detergent",
+        "file_name": "videos/160767 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/river-road-mountain-forest-nature-161071/",
+        "text": "river, road, mountain, forest, nature",
+        "handwritten_description": "summer, green forest, road, river, a car",
+        "editing_prompt": "autumn, yellow forest, road, river, a car",
+        "file_name": "videos/161071 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/flower-gemswurz-yellow-161178/",
+        "text": "flower, gemswurz, yellow",
+        "handwritten_description": "yellow flowers",
+        "editing_prompt": "red flowers",
+        "file_name": "videos/161178 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/dandelion-blossom-bloom-faded-163333/",
+        "text": "dandelion, blossom, bloom, faded",
+        "handwritten_description": "flowers",
+        "editing_prompt": "red flowers",
+        "file_name": "videos/163333 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/flower-water-lilies-lake-163869/",
+        "text": "flower, water, lilies, lake",
+        "handwritten_description": "lotus",
+        "editing_prompt": "lotus, Chinese ink painting, colorful",
+        "file_name": "videos/163869 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/flower-poppy-wind-wildflower-plant-164215/",
+        "text": "flower, poppy, wind, wildflower, plant",
+        "handwritten_description": "red flower, grass",
+        "editing_prompt": "yellow flower",
+        "file_name": "videos/164215 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/fogging-landscape-forest-grasslands-164360/",
+        "text": "fogging, landscape, forest, grasslands",
+        "handwritten_description": "fog in a village",
+        "editing_prompt": "purple fog in a village",
+        "file_name": "videos/164360 (1080p).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/carpenter-tool-handmade-industry-166808/",
+        "text": "carpenter, tool, handmade, industry",
+        "handwritten_description": "plane, wood, carpenter",
+        "editing_prompt": "anime style, plane, wood, carpenter",
+        "file_name": "videos/166808 (Original).mp4"
+    },
+    {
+        "url": "https://pixabay.com/videos/snowball-flower-white-spherical-168572/",
+        "text": "snowball, flower, white, spherical",
+        "handwritten_description": "white flowers, green leaves",
+        "editing_prompt": "red fruit",
+        "file_name": "videos/168572 (Original).mp4"
+    }
+]

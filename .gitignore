@@ -1,0 +1,45 @@
+# Database files (large)
+unified_media_database.json
+product_database.json
+*.zip
+
+# Consolidated data files (too large for git)
+*Amazon-Products.csv
+*consolidated*.csv
+*combined*.csv
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+.cursor/
+
