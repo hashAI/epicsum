@@ -102,14 +102,15 @@ Same parameters and format as images.
 ### File Structure
 ```
 embeddings_chunks/          # Chunks <100MB (committed to git)
-├── embeddings.npy.part_*   # 9 chunks (808 MB total)
-├── database.json.part_*    # 3 chunks (215 MB total)
-└── embeddings_index.json   # Index file (7.3 MB)
+├── embeddings.npy.part_*   # 9 chunks (~95MB each, 808MB total)
+├── database.json.part_*    # 3 chunks (~95MB each, 215MB total)
+├── embeddings_index.json   # Index file (7.3 MB)
+└── *.sha256                # Checksums for verification
 
 # Auto-assembled files (gitignored)
-embeddings.npy              # Assembled from chunks
-unified_media_database.json # Assembled from chunks
-embeddings_index.json       # Copied from chunks
+embeddings.npy              # 808 MB (assembled from chunks)
+unified_media_database.json # 215 MB (assembled from chunks)
+embeddings_index.json       # 7.3 MB (copied from chunks)
 ```
 
 ### Why Chunks?
@@ -134,6 +135,7 @@ embeddings_index.json       # Copied from chunks
 ```
 - Generates database from CSV files (~3 min)
 - Generates embeddings with sentence-transformers (~17 min)
+- Auto-creates chunks for Git
 - Only needed if: no chunks, dataset changed, or embeddings corrupted
 
 ### `split_embeddings.sh` - Create Chunks
@@ -267,9 +269,13 @@ git pull origin main          # Re-download chunks
 
 - **Default behavior:** Redirects to media URL
 - **No 404 errors:** Always returns a result (graceful fallback)
-- **Startup time:** ~40-60 seconds (assembles + loads embeddings)
+- **Startup time:** 
+  - First run: ~60 seconds (assembles chunks + loads embeddings)
+  - Subsequent runs: ~40 seconds (just loads embeddings)
 - **Clean URLs:** All malformed Amazon CDN URLs fixed automatically
 - **Semantic search:** Understands context, not just keywords
+- **Chunk size:** 15 files (~1 GB total), all under 100MB
+- **No Git LFS required:** Uses standard Git
 
 ---
 
