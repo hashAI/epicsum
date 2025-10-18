@@ -1,7 +1,6 @@
 # Large files (assembled from chunks in embeddings_chunks/)
 embeddings.npy
 unified_media_database.json
-embeddings_index.json
 
 # Legacy/backup database files
 product_database.json
