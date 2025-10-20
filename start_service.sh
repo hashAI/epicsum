@@ -38,5 +38,4 @@ echo ""
 echo "🚀 Starting EpicSum Media Service on port 8082..."
 echo "   Loading embeddings and FAISS index (~30-40 seconds)..."
 echo ""
-python3 media_service.py
-
+python media_service.py

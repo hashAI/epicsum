@@ -379,7 +379,7 @@ async def health_check():
 if __name__ == "__main__":
     uvicorn.run(
         "media_service:app",
-        host="0.0.0.0",
+        host="localhost",
         port=8082,
         reload=True
     )
