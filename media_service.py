@@ -118,6 +118,45 @@ def load_sentence_model(model_name: str = "all-MiniLM-L6-v2"):
         raise
 
 
+def transform_image_size(url: str, size: int = 720) -> str:
+    """
+    Transform Amazon image URL to requested size.
+    
+    Args:
+        url: Original Amazon image URL
+        size: Desired image size in pixels (160, 320, 480, 720, 1000, 1500)
+        
+    Returns:
+        Transformed URL with new size
+    """
+    import re
+    # Pattern matches _AC_UL<digits>_ or _AC_SL<digits>_
+    pattern = r'(_AC_[US]L)\d+(_)'
+    replacement = rf'\g<1>{size}\g<2>'
+    return re.sub(pattern, replacement, url)
+
+
+def validate_image_size(size: int) -> int:
+    """
+    Validate and normalize image size to supported Amazon sizes.
+    
+    Args:
+        size: Requested size
+        
+    Returns:
+        Valid size (closest match from supported sizes)
+    """
+    supported_sizes = [160, 320, 480, 720, 1000, 1500]
+    
+    # If exact match, return it
+    if size in supported_sizes:
+        return size
+    
+    # Find closest supported size
+    closest = min(supported_sizes, key=lambda x: abs(x - size))
+    return closest
+
+
 def search_media_fast(
     query: str,
     content_type: str,
@@ -193,9 +232,13 @@ async def root():
         "version": "2.0.0",
         "optimization": "FAISS + Sentence Transformers",
         "endpoints": {
-            "images": "/epicsum/media/image/{description}",
-            "videos": "/epicsum/media/video/{description}",
-            "with_index": "/epicsum/media/image/{description}___<index>"
+            "images": "/epicsum/media/image/{description}?index=0&size=720&redirect=true",
+            "videos": "/epicsum/media/video/{description}?index=0&size=720&redirect=true"
+        },
+        "parameters": {
+            "index": "Result index (default: 0)",
+            "size": "Image size in pixels - 160, 320, 480, 720, 1000, 1500 (default: 720)",
+            "redirect": "Redirect to media URL (default: true)"
         },
         "database_stats": {
             "total_items": len(MEDIA_DATABASE),
@@ -208,30 +251,32 @@ async def root():
 
 
 @app.get("/epicsum/media/image/{description:path}")
-async def get_image(description: str, redirect: bool = Query(True)):
+async def get_image(
+    description: str,
+    index: int = Query(0, ge=0, description="Result index (0-based)"),
+    size: int = Query(720, ge=160, le=1500, description="Image size in pixels"),
+    redirect: bool = Query(True, description="Redirect to image URL or return JSON")
+):
     """
     Get image(s) based on description using fast semantic search.
     
-    Format: /epicsum/media/image/tshirt-having-collar
-    With index: /epicsum/media/image/tshirt-having-collar___2
-    With redirect: /epicsum/media/image/tshirt-having-collar?redirect=true
+    Examples:
+        /epicsum/media/image/laptop
+        /epicsum/media/image/laptop?index=2
+        /epicsum/media/image/laptop?size=1500
+        /epicsum/media/image/laptop?index=3&size=720&redirect=false
     
     Args:
-        description: Image description (can include ___<index> at the end)
-        redirect: If true, redirects to the actual image link instead of returning JSON
+        description: Image description (e.g., "blue-jeans", "laptop")
+        index: Result index, 0-based (default: 0)
+        size: Image size in pixels - 160, 320, 480, 720, 1000, 1500 (default: 720)
+        redirect: If true, redirects to the image URL; if false, returns JSON
         
     Returns:
-        Matching image details or redirect to image URL
+        Redirect to image URL or JSON with image details
     """
-    # Parse description and optional index
-    index = 0
-    if '___' in description:
-        parts = description.split('___')
-        description = parts[0]
-        try:
-            index = int(parts[1])
-        except (ValueError, IndexError):
-            index = 0
+    # Validate and normalize size to supported Amazon sizes
+    final_size = validate_image_size(size)
     
     # Search for matching images using FAISS
     results = search_media_fast(description, 'image', limit=100)
@@ -245,9 +290,13 @@ async def get_image(description: str, redirect: bool = Query(True)):
                 detail=f"No images available in database"
             )
     
-    # Apply modulus to index
+    # Apply modulus to index to handle out-of-range values
     final_index = index % len(results)
-    selected_image = results[final_index]
+    selected_image = results[final_index].copy()
+    
+    # Transform image URL to requested size
+    if selected_image.get('link'):
+        selected_image['link'] = transform_image_size(selected_image['link'], final_size)
     
     # If redirect is true, redirect to the actual image link
     if redirect:
@@ -256,39 +305,35 @@ async def get_image(description: str, redirect: bool = Query(True)):
     return {
         "success": True,
         "query": description,
-        "requested_index": index,
-        "actual_index": final_index,
+        "index": final_index,
+        "size": final_size,
         "total_matches": len(results),
         "result": selected_image
     }
 
 
 @app.get("/epicsum/media/video/{description:path}")
-async def get_video(description: str, redirect: bool = Query(True)):
+async def get_video(
+    description: str,
+    index: int = Query(0, ge=0, description="Result index (0-based)"),
+    redirect: bool = Query(True, description="Redirect to video URL or return JSON")
+):
     """
     Get video(s) based on description using fast semantic search.
     
-    Format: /epicsum/media/video/yellow-flower-blooming
-    With index: /epicsum/media/video/yellow-flower-blooming___2
-    With redirect: /epicsum/media/video/yellow-flower-blooming?redirect=true
+    Examples:
+        /epicsum/media/video/sunset
+        /epicsum/media/video/sunset?index=2
+        /epicsum/media/video/sunset?index=3&redirect=false
     
     Args:
-        description: Video description (can include ___<index> at the end)
-        redirect: If true, redirects to the actual video link instead of returning JSON
+        description: Video description (e.g., "sunset", "ocean-waves")
+        index: Result index, 0-based (default: 0)
+        redirect: If true, redirects to the video URL; if false, returns JSON
         
     Returns:
-        Matching video details or redirect to video URL
+        Redirect to video URL or JSON with video details
     """
-    # Parse description and optional index
-    index = 0
-    if '___' in description:
-        parts = description.split('___')
-        description = parts[0]
-        try:
-            index = int(parts[1])
-        except (ValueError, IndexError):
-            index = 0
-    
     # Search for matching videos using FAISS
     results = search_media_fast(description, 'video', limit=100)
     
@@ -301,7 +346,7 @@ async def get_video(description: str, redirect: bool = Query(True)):
                 detail=f"No videos available in database"
             )
     
-    # Apply modulus to index
+    # Apply modulus to index to handle out-of-range values
     final_index = index % len(results)
     selected_video = results[final_index]
     
@@ -312,8 +357,7 @@ async def get_video(description: str, redirect: bool = Query(True)):
     return {
         "success": True,
         "query": description,
-        "requested_index": index,
-        "actual_index": final_index,
+        "index": final_index,
         "total_matches": len(results),
         "result": selected_video
     }

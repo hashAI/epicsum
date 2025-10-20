@@ -35,17 +35,23 @@ Service runs on: **http://localhost:8082**
 ## Usage Examples
 
 ```bash
-# Get image (redirect to URL)
-curl "http://localhost:8082/epicsum/media/image/blue-jeans"
+# Get image (default: index=0, size=720, redirect=true)
+curl "http://localhost:8082/epicsum/media/image/laptop"
 
 # Get JSON response
 curl "http://localhost:8082/epicsum/media/image/laptop?redirect=false"
 
-# Get specific result (index)
-curl "http://localhost:8082/epicsum/media/image/watch___2"
+# Get specific result by index
+curl "http://localhost:8082/epicsum/media/image/laptop?index=2"
+
+# Get specific size (160, 320, 480, 720, 1000, 1500)
+curl "http://localhost:8082/epicsum/media/image/laptop?size=1500"
+
+# Combine parameters
+curl "http://localhost:8082/epicsum/media/image/laptop?index=3&size=480&redirect=false"
 
 # Get video
-curl "http://localhost:8082/epicsum/media/video/sunset"
+curl "http://localhost:8082/epicsum/media/video/sunset?index=1"
 
 # Health check
 curl "http://localhost:8082/health"
@@ -58,25 +64,37 @@ curl "http://localhost:8082/health"
 ### Get Image
 ```
 GET /epicsum/media/image/{description}
-GET /epicsum/media/image/{description}___<index>
 ```
 
 **Query Parameters:**
+- `index` (int, default: `0`) - Result index (0-based)
+- `size` (int, default: `720`) - Image size in pixels (160, 320, 480, 720, 1000, 1500)
 - `redirect` (bool, default: `true`) - Redirect to media URL or return JSON
+
+**Examples:**
+```bash
+GET /epicsum/media/image/laptop                           # Default: index=0, size=720
+GET /epicsum/media/image/laptop?index=2                   # Second result, 720px
+GET /epicsum/media/image/laptop?size=1500                 # First result, 1500px
+GET /epicsum/media/image/laptop?index=3&size=480          # Fourth result, 480px
+GET /epicsum/media/image/laptop?redirect=false            # Return JSON
+```
 
 **Example Response (redirect=false):**
 ```json
 {
   "success": true,
-  "query": "blue-jeans",
+  "query": "laptop",
+  "index": 0,
+  "size": 720,
   "total_matches": 100,
   "result": {
     "content_type": "image",
-    "title": "Blue Jeans",
-    "link": "https://m.media-amazon.com/images/I/...",
+    "title": "Lenovo IdeaPad Slim 3",
+    "link": "https://m.media-amazon.com/images/I/xxxxx._AC_UL720_.jpg",
     "meta": {
-      "category": "clothing",
-      "sub_category": "Jeans"
+      "category": "tv, audio & cameras",
+      "sub_category": "All Electronics"
     }
   }
 }
@@ -85,10 +103,18 @@ GET /epicsum/media/image/{description}___<index>
 ### Get Video
 ```
 GET /epicsum/media/video/{description}
-GET /epicsum/media/video/{description}___<index>
 ```
 
-Same parameters and format as images.
+**Query Parameters:**
+- `index` (int, default: `0`) - Result index (0-based)
+- `redirect` (bool, default: `true`) - Redirect to video URL or return JSON
+
+**Examples:**
+```bash
+GET /epicsum/media/video/sunset                           # Default: index=0
+GET /epicsum/media/video/sunset?index=2                   # Third result
+GET /epicsum/media/video/sunset?redirect=false            # Return JSON
+```
 
 ---
 
@@ -278,6 +304,8 @@ git pull origin main          # Re-download chunks
 - **Semantic search:** Understands context, not just keywords
 - **Chunk size:** 15 files (~1 GB total), all under 100MB
 - **No Git LFS required:** Uses standard Git
+- **Dynamic image sizing:** Amazon CDN supports 160-1500px (default: 720px)
+- **Query parameters:** Clean RESTful API with index & size params
 
 ---
 
