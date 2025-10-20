@@ -65,17 +65,13 @@ else
 fi
 echo ""
 
-# Copy embeddings_index.json
-if [ ! -f "embeddings_index.json" ]; then
-    if [ -f "embeddings_chunks/embeddings_index.json" ]; then
-        echo "Copying embeddings_index.json..."
-        cp embeddings_chunks/embeddings_index.json .
-        echo "✓ embeddings_index.json copied ($(du -h embeddings_index.json | cut -f1))"
-    else
-        echo "⚠️  embeddings_index.json not found in chunks"
-    fi
+# Check embeddings_index.json (should already exist at root)
+if [ -f "embeddings_index.json" ]; then
+    echo "✓ embeddings_index.json found at root ($(du -h embeddings_index.json | cut -f1))"
 else
-    echo "✓ embeddings_index.json already exists"
+    echo "⚠️  embeddings_index.json not found!"
+    echo "    This file should be committed directly to git at root level."
+    echo "    If missing, run: ./setup.sh"
 fi
 echo ""
 

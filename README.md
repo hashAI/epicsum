@@ -101,20 +101,22 @@ Same parameters and format as images.
 
 ### File Structure
 ```
-embeddings_chunks/          # Chunks <100MB (committed to git)
+# Committed to git
+embeddings_index.json       # 7.3 MB (at root - committed directly)
+embeddings_chunks/          # Chunks <100MB
 ├── embeddings.npy.part_*   # 9 chunks (~95MB each, 808MB total)
 ├── database.json.part_*    # 3 chunks (~95MB each, 215MB total)
-├── embeddings_index.json   # Index file (7.3 MB)
 └── *.sha256                # Checksums for verification
 
 # Auto-assembled files (gitignored)
 embeddings.npy              # 808 MB (assembled from chunks)
 unified_media_database.json # 215 MB (assembled from chunks)
-embeddings_index.json       # 7.3 MB (copied from chunks)
 ```
 
 ### Why Chunks?
 - Git doesn't allow files >100MB
+- Only large files chunked: `embeddings.npy` (808MB), `unified_media_database.json` (215MB)
+- `embeddings_index.json` (7.3MB) committed directly at root
 - Chunks auto-assemble on first run
 - No Git LFS needed
 

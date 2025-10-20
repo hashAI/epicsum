@@ -40,14 +40,9 @@ else
 fi
 echo ""
 
-# Copy embeddings_index.json (7.3 MB - small enough, no split needed)
-if [ -f "embeddings_index.json" ]; then
-    echo "Copying embeddings_index.json (small enough, no split needed)..."
-    cp embeddings_index.json embeddings_chunks/
-    echo "✓ Copied"
-else
-    echo "⚠️  embeddings_index.json not found"
-fi
+# Note: embeddings_index.json (7.3 MB) stays at root level
+# It's small enough to commit directly to git (no chunking needed)
+echo "✓ embeddings_index.json (7.3 MB) - committed directly to git (no chunking needed)"
 echo ""
 
 # Show results
@@ -59,8 +54,9 @@ echo "Chunk directory: embeddings_chunks/"
 ls -lh embeddings_chunks/ | tail -n +2
 echo ""
 echo "Next steps:"
-echo "  1. git add embeddings_chunks/"
+echo "  1. git add embeddings_chunks/ embeddings_index.json"
 echo "  2. git commit -m 'Add embeddings in chunks'"
-echo "  3. Add to .gitignore: embeddings.npy, unified_media_database.json"
+echo ""
+echo "Note: embeddings_index.json is committed at root (not chunked)"
 echo ""
 
