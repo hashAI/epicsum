@@ -1,4 +1,4 @@
-# EpicSum Media Service
+# e-picsum: Contextually relevant Placeholder Images for your website development
 
 **Lorem Ipsum for images and videos with ultra-fast semantic search.**
 
